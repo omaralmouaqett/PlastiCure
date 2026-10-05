@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PlastiCure — an aquatic plastic pollution project combining AI, autonomous underwater robotics and biotechnology.">
+  <meta name="theme-color" content="#071316">
+  <title>PlastiCure — Plastic, Reimagined</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="PlastiCure home">
+      <span class="brand-mark">PC</span>
+      <span>PLASTICURE</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#problem">Problem</a>
+      <a href="#system">System</a>
+      <a href="#biology">Biology</a>
+      <a href="#my-work">My work</a>
+      <a href="#sources">Sources</a>
+    </nav>
+
+    <a class="nav-cta" href="mailto:Omar.almouaqat@gmail.com">
+      Contact <span>↗</span>
+    </a>
+
+    <button class="menu" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="pulse"></span>
+          GEMS GLOBAL INNOVATION CHALLENGE · IMPACT AWARD
+        </div>
+
+        <h1>Plastic is<br><em>not</em> invisible.</h1>
+
+        <p class="hero-lede">
+          PlastiCure explores a different way to approach aquatic plastic pollution:
+          detect it with AI, reach it autonomously, and investigate a biological
+          route for PET degradation.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-dark" href="#system">
+            Explore the system <span>↘</span>
+          </a>
+
+          <a class="text-link" href="#my-work">
+            See my contribution <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="water-grid"></div>
+
+        <div class="depth-label">
+          HYDROSCOUT / 00.01
+        </div>
+
+        <div class="scan-line"></div>
+
+        <div class="vehicle">
+          <div class="vehicle-body">
+            <span class="vehicle-window"></span>
+            <span class="vehicle-port"></span>
+            <span class="vehicle-port port-two"></span>
+          </div>
+
+          <span class="arm arm-left"></span>
+          <span class="arm arm-right"></span>
+
+          <span class="thruster thruster-a"></span>
+          <span class="thruster thruster-b"></span>
+        </div>
+
+        <div class="target">
+          <span></span>
+          <b>PLASTIC DETECTED</b>
+        </div>
+
+        <div class="coordinate">
+          25° 14' 18.2" N<br>
+          55° 18' 43.1" E
+        </div>
+
+        <div class="hero-caption">
+          AUTONOMOUS UNDERWATER CONCEPT<br>
+          <small>AI / BIOLOGY / ROBOTICS</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Project disciplines">
+      <div>ARTIFICIAL INTELLIGENCE</div>
+      <span>×</span>
+      <div>UNDERWATER ROBOTICS</div>
+      <span>×</span>
+      <div>BIOTECHNOLOGY</div>
+      <span>×</span>
+      <div>AQUATIC CONSERVATION</div>
+      <span>×</span>
+    </section>
+
+    <section class="section problem" id="problem">
+      <div class="section-intro">
+        <p class="kicker">01 / THE PROBLEM</p>
+        <h2>The ocean doesn't have a cleanup button.</h2>
+      </div>
+
+      <div class="problem-copy">
+        <p class="big-copy">
+          Plastic pollution moves through rivers, coastlines and open water.
+          Once it enters aquatic environments, retrieval becomes harder and
+          fragmentation can create an even smaller target: microplastics.
+        </p>
+
+        <p>
+          UNEP estimates that <strong>19–23 million tonnes</strong> of plastic
+          leak into aquatic ecosystems every year. Another UNEP assessment puts
+          current ocean inputs at about <strong>11 million tonnes annually</strong>,
+          with a possible rise to 23–37 million tonnes per year by 2040 without
+          major intervention.
+        </p>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Plastic pollution statistics">
+      <article class="metric">
+        <span class="metric-no">01</span>
+
+        <strong>19–23M</strong>
+
+        <p>
+          tonnes of plastic estimated to leak into aquatic ecosystems each year.
+        </p>
+
+        <small>UNEP · 2025</small>
+      </article>
+
+      <article class="metric metric-dark">
+        <span class="metric-no">02</span>
+
+        <strong>11M</strong>
+
+        <p>
+          tonnes of plastic currently enter the ocean annually in UNEP's marine assessment.
+        </p>
+
+        <small>UNEP</small>
+      </article>
+
+      <article class="metric">
+        <span class="metric-no">03</span>
+
+        <strong>516M</strong>
+
+        <p>
+          tonnes of plastic consumption expected globally in 2025.
+        </p>
+
+        <small>UNEP · 2025</small>
+      </article>
+
+      <article class="metric">
+        <span class="metric-no">04</span>
+
+        <strong>9%</strong>
+
+        <p>
+          of plastics are estimated to be recycled globally.
+        </p>
+
+        <small>UNEP · 2025</small>
+      </article>
+    </section>
+
+    <section class="section system" id="system">
+      <div class="section-intro">
+        <p class="kicker">02 / THE SYSTEM</p>
+        <h2>Three disciplines.<br>One direction.</h2>
+      </div>
+
+      <div class="bento">
+
+        <article class="bento-card card-large">
+          <div class="card-top">
+            <span>01</span>
+            <span>AI / DETECTION</span>
+          </div>
+
+          <div class="radar">
+            <div class="radar-ring ring-1"></div>
+            <div class="radar-ring ring-2"></div>
+            <div class="radar-ring ring-3"></div>
+
+            <div class="radar-cross x"></div>
+            <div class="radar-cross y"></div>
+
+            <div class="radar-sweep"></div>
+
+            <div class="radar-dot dot-a"></div>
+            <div class="radar-dot dot-b"></div>
+
+            <div class="radar-label">
+              OBJECT / 92.4%
+            </div>
+          </div>
+
+          <h3>See what shouldn't be there.</h3>
+
+          <p>
+            AI-assisted detection is the project's perception layer:
+            identify plastic in an underwater environment and give the
+            vehicle a useful target rather than relying on blind collection.
+          </p>
+        </article>
+
+        <article class="bento-card card-dark">
+          <div class="card-top">
+            <span>02</span>
+            <span>ROBOTICS</span>
+          </div>
+
+          <div class="mini-vehicle">
+            <div></div>
+            <i></i>
+            <i></i>
+          </div>
+
+          <h3>HydroScout</h3>
+
+          <p>
+            An autonomous underwater vehicle concept designed to bring
+            sensing and intervention closer to the pollution source.
+          </p>
+        </article>
+
+        <article class="bento-card card-biology">
+          <div class="card-top">
+            <span>03</span>
+            <span>BIOLOGY</span>
+          </div>
+
+          <div class="cell-cluster">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/Ideonella_Sak_Image_%281%29.png"
+              alt="Illustration of Ideonella sakaiensis"
+              loading="lazy"
+            >
+          </div>
+
+          <h3>Let biology do some of the work.</h3>
+
+          <p>
+            <em>Ideonella sakaiensis</em> is a PET-degrading bacterium whose
+            enzymes became the biological inspiration behind the project's
+            degradation pathway.
+          </p>
+        </article>
+
+        <article class="bento-card card-wide">
+          <div class="card-top">
+            <span>04</span>
+            <span>THE LOOP</span>
+          </div>
+
+          <div class="loop">
+            <div>
+              <span>DETECT</span>
+              <b>01</b>
+            </div>
+
+            <i>→</i>
+
+            <div>
+              <span>LOCATE</span>
+              <b>02</b>
+            </div>
+
+            <i>→</i>
+
+            <div>
+              <span>INTERVENE</span>
+              <b>03</b>
+            </div>
+
+            <i>→</i>
+
+            <div>
+              <span>DEGRADE</span>
+              <b>04</b>
+            </div>
+          </div>
+
+          <p class="loop-note">
+            The concept connects digital perception with physical intervention
+            and a biological route for PET processing.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="photo-band">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Plastic_pollution_underwater_-_Calanques_de_Marseille%2C_Projet_Sentinelle.jpg"
+        alt="Plastic pollution documented underwater in the Calanques de Marseille"
+        loading="lazy"
+      >
+
+      <div class="photo-overlay">
+        <span>THE ENVIRONMENT WE ARE TRYING TO PROTECT</span>
+
+        <strong>
+          Find it before<br>
+          it disappears.
+        </strong>
+      </div>
+
+      <p class="credit">
+        Photo: Karim Saari / Wikimedia Commons · CC BY 4.0
+      </p>
+    </section>
+
+    <section class="section biology" id="biology">
+      <div class="section-intro">
+        <p class="kicker">03 / THE BIOLOGY</p>
+        <h2>A bacterium that<br>changed the question.</h2>
+      </div>
+
+      <div class="bio-grid">
+
+        <div class="bio-image">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/19/Ideonella_Sak_Image_%281%29.png"
+            alt="Ideonella sakaiensis visualisation"
+            loading="lazy"
+          >
+
+          <div class="image-label">
+            IDEONELLA SAKAIENSIS / 201-F6
+          </div>
+        </div>
+
+        <div class="bio-copy">
+
+          <p class="big-copy">
+            <em>Ideonella sakaiensis</em> was reported in 2016 as a bacterium
+            capable of degrading and assimilating PET.
+          </p>
+
+          <p>
+            Its PETase enzyme breaks PET into smaller intermediates, including
+            MHET. A second enzyme, MHETase, can then hydrolyse MHET into
+            terephthalic acid and ethylene glycol.
+          </p>
+
+          <div class="enzyme-flow">
+            <span>PET</span>
+            <b>→ PETase →</b>
+            <span>MHET</span>
+            <b>→ MHETase →</b>
+            <span>TPA + EG</span>
+          </div>
+
+          <div class="research-fact">
+            <strong>2016</strong>
+
+            <span>
+              In the original study, the bacterium almost completely degraded
+              the experimental PET film after six weeks at 30°C.
+            </span>
+          </div>
+
+          <p class="science-note">
+            <strong>Important:</strong>
+            this is a research pathway, not a claim that a bacterium can simply
+            be released into an ocean and "eat" plastic at scale. The project's
+            concept explores how biological degradation could be integrated
+            responsibly with detection and robotics.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="enzyme-section">
+
+      <div class="enzyme-copy">
+        <p class="kicker">MOLECULAR LAYER</p>
+
+        <h3>PETase, visualised.</h3>
+
+        <p>
+          The structure below represents a PETase protein from
+          <em>Ideonella sakaiensis</em>. Molecular biology is where the
+          project's environmental ambition becomes a biochemical mechanism.
+        </p>
+
+        <a
+          class="source-link"
+          href="https://commons.wikimedia.org/wiki/File:PETase_5XH3_with_HEMT-surface.png"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View source & licensing ↗
+        </a>
+      </div>
+
+      <div class="enzyme-image">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/8d/PETase_5XH3_with_HEMT-surface.png"
+          alt="Crystal structure visualisation of Ideonella sakaiensis PETase"
+          loading="lazy"
+        >
+
+        <span>5XH3 · PETASE / HEMT</span>
+      </div>
+
+    </section>
+
+    <section class="section my-work" id="my-work">
+
+      <div class="section-intro">
+        <p class="kicker">04 / MY CONTRIBUTION</p>
+        <h2>The part I<br>brought to the table.</h2>
+      </div>
+
+      <div class="work-layout">
+
+        <div class="work-statement">
+          <p class="quote-mark">“</p>
+
+          <p class="big-copy">
+            I worked on the technical side of PlastiCure, helping translate
+            the environmental problem into a technology concept where AI,
+            autonomous systems and biology could work together.
+          </p>
+
+          <p class="muted">
+            This section is deliberately written around the technical
+            contribution rather than presenting the entire team project
+            as the work of one person.
+          </p>
+        </div>
+
+        <div class="work-list">
+
+          <article>
+            <span>01</span>
+
+            <div>
+              <h3>AI / Computer Vision</h3>
+
+              <p>
+                Exploring the role of AI in detecting underwater plastic
+                and turning visual information into an actionable target.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>02</span>
+
+            <div>
+              <h3>Systems Thinking</h3>
+
+              <p>
+                Connecting sensing, autonomous underwater movement and
+                biological intervention into one coherent pipeline.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>03</span>
+
+            <div>
+              <h3>Technical Communication</h3>
+
+              <p>
+                Turning complex scientific and engineering ideas into a
+                clear, defensible concept suitable for a real-world
+                innovation challenge.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="award">
+
+      <div class="award-symbol">◎</div>
+
+      <div>
+        <p class="kicker">RECOGNITION / 2025</p>
+
+        <h2>
+          Impact Award<br>
+          <span>“The World Changers”</span>
+        </h2>
+
+        <p>
+          PlastiCure was named the Impact Award winner at the 2025
+          GEMS Global Innovation Challenge, representing GEMS Founders
+          School – Al Mizhar.
+        </p>
+      </div>
+
+      <div class="award-meta">
+        <strong>AED 7,500</strong>
+        <span>award</span>
+
+        <strong>10,000+</strong>
+        <span>students participated in GIC</span>
+      </div>
+
+    </section>
+
+    <section class="section sources" id="sources">
+
+      <div class="section-intro">
+        <p class="kicker">05 / SOURCES</p>
+        <h2>Science first.<br>Always.</h2>
+      </div>
+
+      <div class="source-list">
+
+        <a
+          href="https://www.gemseducation.com/en/News-and-Events/News/GEMS-Education-announces-winners-of-2025-GEMS-Global-Innovation-Challenge"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>GEMS Education</span>
+          <strong>2025 GEMS Global Innovation Challenge results ↗</strong>
+        </a>
+
+        <a
+          href="https://www.unep.org/interactives/wwqa/technical-highlights/riverine-plastic-pollution"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>UNEP</span>
+          <strong>Riverine plastic pollution — global estimates ↗</strong>
+        </a>
+
+        <a
+          href="https://www.unep.org/resources/emerging-issues/marine-plastics-litter-and-microplastic"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>UNEP</span>
+          <strong>Marine plastics, litter and microplastics ↗</strong>
+        </a>
+
+        <a
+          href="https://www.nature.com/articles/s41467-018-02881-1"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>Nature Communications</span>
+          <strong>Structural insight into PET degradation ↗</strong>
+        </a>
+
+        <a
+          href="https://www.nature.com/nature-index/article/10.1126/science.aad6359"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>Science / Nature Index</span>
+          <strong>A bacterium that degrades and assimilates PET ↗</strong>
+        </a>
+
+        <a
+          href="https://commons.wikimedia.org/wiki/Category:Ideonella_sakaiensis"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>Wikimedia Commons</span>
+          <strong>Ideonella sakaiensis media archive ↗</strong>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="contact">
+
+      <div>
+        <p class="kicker">LET'S BUILD BETTER SYSTEMS</p>
+
+        <h2>
+          Questions?<br>
+          Ideas? <em>Let's talk.</em>
+        </h2>
+      </div>
+
+      <div class="contact-actions">
+
+        <a
+          class="button button-light"
+          href="mailto:Omar.almouaqat@gmail.com"
+        >
+          Omar.almouaqat@gmail.com <span>↗</span>
+        </a>
+
+        <a
+          class="github-link"
+          href="https://github.com/omaralmouaqett"
+          target="_blank"
+          rel="noreferrer"
+        >
+          github.com/omaralmouaqett ↗
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <span>PLASTICURE / OMAR AL MOUAQET</span>
+    <span>BUILT FOR THE WEB · 2026</span>
+    <a href="#top">BACK TO TOP ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
